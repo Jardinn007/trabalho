@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto Federal do Maranhão</title>
-    <link rel="stylesheet" href="styles.css"><style>
+    <link rel="stylesheet" href="styles.css">
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -67,7 +68,7 @@
         <img src="https://iconape.com/wp-content/png_logo_vector/instituto-federal-do-maranhao-marca-vertical-2015.png" width="100" height="100" alt="IFMA Logo">
         <nav>
             <ul>
-                <li><a href="#historia">historia</a></li>
+                <li><a href="#historia">história</a></li>
                 <li><a href="#sobre">sobre</a></li>
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#localizacao">Localização</a></li>
@@ -78,7 +79,7 @@
 
     <section id="historia">
         <h2>História do Campus Coelho Neto</h2>
-        <p><strong> IFMA Campus Coelho Neto foi oficialmente autorizado a funcionar em 23 de abril de 2013, integrando-se ao Instituto Federal de Educação, Ciência e Tecnologia do Maranhão, que visa promover a educação técnica e superior. Situado em um município de cerca de 46.750 habitantes, o campus destaca-se por sua proposta de formar profissionais voltados para a agricultura e a indústria de beneficiamento de cana-de-açúcar. Desde sua criação, tem se comprometido com o desenvolvimento social e econômico da região, oferecendo cursos que atendem não só os moradores de Coelho Neto, mas também de cidades vizinhas, contribuindo para a inclusão social e o fortalecimento da formação profissional. Com mais de 70 grupos de pesquisa e diversas ações de extensão, o campus tem se consolidado como um centro de excelência educacional no Médio Parnaíba, impactando positivamente a comunidade local e promovendo um futuro sustentável.</strong></p>
+        <p><strong>IFMA Campus Coelho Neto foi oficialmente autorizado a funcionar em 23 de abril de 2013, integrando-se ao Instituto Federal de Educação, Ciência e Tecnologia do Maranhão, que visa promover a educação técnica e superior. Situado em um município de cerca de 46.750 habitantes, o campus destaca-se por sua proposta de formar profissionais voltados para a agricultura e a indústria de beneficiamento de cana-de-açúcar. Desde sua criação, tem se comprometido com o desenvolvimento social e econômico da região, oferecendo cursos que atendem não só os moradores de Coelho Neto, mas também de cidades vizinhas, contribuindo para a inclusão social e o fortalecimento da formação profissional. Com mais de 70 grupos de pesquisa e diversas ações de extensão, o campus tem se consolidado como um centro de excelência educacional no Médio Parnaíba, impactando positivamente a comunidade local e promovendo um futuro sustentável.</strong></p>
     </section>
 
     <section id="sobre">
@@ -113,12 +114,22 @@
         <div class="relato">
             <h3>Entrevista 2: Nilbeany Tertulino - Curso de administração (ADM)</h3>
             <p><strong>Pergunta 1: Qual é a sua visão sobre a interseção entre administração e tecnologia?</strong></p>
-            <p><strong>Nilbeany Tertulino:___________</strong></p>
+            <p><strong>Nilbeany Tertulino: A interseção entre administração e tecnologia é fundamental no cenário atual. A tecnologia não só otimiza processos administrativos, como também facilita a tomada de decisões com base em dados. Ela permite que gestores sejam mais ágeis, eficientes e precisos, impactando diretamente o desempenho das organizações.</strong></p>
             <p><strong>Pergunta 2: Quais habilidades você considera mais importantes para os futuros profissionais da sua área?</strong></p>
-            <p><strong>Nilbeany Tertulino:________________</strong></p>
+            <p><strong>Nilbeany Tertulino: Para os futuros profissionais de administração, habilidades como pensamento crítico, conhecimento de ferramentas tecnológicas e capacidade de análise de dados são essenciais. Além disso, a comunicação eficaz e a liderança são indispensáveis para quem deseja se destacar na gestão moderna.</strong></p>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        // Navegação suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
